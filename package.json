@@ -11,6 +11,7 @@
         "format": "npx prettier --write"
     },
     "dependencies": {
+        "@docsly/react": "^1.5.0",
         "@headlessui/react": "^1.7.13",
         "@next/font": "13.1.6",
         "@types/node": "18.11.19",
