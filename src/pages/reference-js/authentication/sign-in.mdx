@@ -31,7 +31,7 @@ Render the `SignIn` component to an HTML `<div>` element.
 
   const signInComponent = document.querySelector<HTMLDivElement>('#sign-in')!;
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
   await clerk.load();
 
   clerk.mountSignIn(signInComponent, {
@@ -109,7 +109,7 @@ Unmount and run cleanup on an existing SignIn component instance.
 
   const signInComponent = document.querySelector<HTMLDivElement>('#sign-in')!;
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
 
   await clerk.load();
 
@@ -174,7 +174,7 @@ Opens the SignIn component as an overlay at the root of your HTML `body` element
   import Clerk from '@clerk/clerk-js';
   import { dark } from "@clerk/themes";
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
   await clerk.load();
 
   clerk.openSignIn({
@@ -235,7 +235,7 @@ Closes the sign in overlay.
   import Clerk from '@clerk/clerk-js';
   import { dark } from "@clerk/themes";
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
   await clerk.load();
 
   clerk.openSignIn();

@@ -1,4 +1,6 @@
 {
   "organization-profile": "Organization Profile",
-  "create-organization": "Create Organization"
+  "create-organization-component": "Create Organization Component",
+  "organization-switcher": "Organization Switcher",
+  "create-organization": "createOrganization()"
 }

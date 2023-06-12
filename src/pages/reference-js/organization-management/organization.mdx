@@ -1,0 +1,115 @@
+import { Tab, Tabs } from "nextra-theme-docs";
+import { Tables } from "@/components/Table";
+import { Images } from "@/components/Images";
+import { CodeBlockTabs } from "@/components/CodeBlockTabs";
+
+# Organization
+
+This is a class that represents an organziation. It's returned from the [`createOrganization`](TODO) and [`getOrganization`](TODO) 
+methods on [the `Clerk` class instance](TODO).
+
+## Properties
+
+<Tables
+  headings={["Name", "Type", "Description"]}
+  rows={[
+  {cells: [ <code>id</code>, <code>string</code>, "The unique identifier of the related organization."]},
+  {cells: [ <code>name</code>, <code>string</code>, "The name of the related organization."]},
+  {cells: [ <code>slug</code>, <code>string | null</code>, "The organization slug. If supplied, it must be unique for the instance."]},
+  {cells: [ <code>logoUrl</code>, <code>string | null</code>, "The full URL for the organization logo. (deprecated in favor of imageUrl)"]},
+  {cells: [ <code>imageUrl</code>, <code>string</code>, "Holds the organization logo or default logo"]},
+  {cells: [ <code>membersCount</code>, <code>number</code>, "The number of members the associated organization contains"]},
+  {cells: [ <code>pendingInvitationsCount</code>, <code>number</code>, "The number of pending invitations to users to join the organization."]},
+  {cells: [ <code>publicMetadata</code>, <code>object</code>, <>
+  Additional information about the organization that can be read through the <a href="https://reference.clerk.dev/reference/frontend-api-reference">Frontend API</a>, but written only from the <a href="https://clerk.com/docs/reference/backend-api">Backend API</a>.
+  </>]},
+  {cells: [ <code>createdAt</code>, <code>Date</code>, "Date of the time the organization was created."]},
+  {cells: [ <code>updatedAt</code>, <code>Date</code>, "Date of the last time the user was updated."]},
+  ]}
+/>
+
+## Methods
+
+
+### `update()`
+
+
+
+```typescript
+function update(params: UpdateOrganizationParams): Promise<OrganizationResource>;
+```
+
+### `getMemberships()`
+
+```typescript
+function getMemberships(params?: GetMembershipsParams): Promise<OrganizationMembershipResource[]>;
+```
+
+Retrieve the members of the selected 
+
+### `getPendingInvitations()`
+
+```typescript
+function getPendingInvitations(params?: GetPendingInvitationsParams): Promise<OrganizationInvitationResource[]>;
+```
+
+Retrieve the members of the selected organization.
+
+### `addMember()`
+
+```typescript
+function addMember(params: AddMemberParams): Promise<OrganizationMembershipResource>;
+```
+
+Adds a user as a member to an organization. A user can only be added to an organization if they are not already members of it and if they already exist in the same instance as the organization.
+
+Please note that only administrators can add members to an organization.
+
+### `inviteMember()`
+
+
+
+```typescript
+function inviteMember(params: InviteMemberParams): Promise<OrganizationInvitationResource>;
+```
+
+### `inviteMembers()`
+
+
+
+```typescript
+function inviteMembers(params: InviteMembersParams): Promise<OrganizationInvitationResource[]>;
+```
+
+### `updateMember()`
+
+
+
+```typescript
+function updateMember(params: UpdateMembershipParams): Promise<OrganizationMembershipResource>;
+```
+
+### `removeMember()`
+
+
+
+```typescript
+function removeMember(userId: string): Promise<OrganizationMembershipResource>;
+```
+
+
+### `destroy()`
+
+```typescript
+function destroy(): Promise<void>;
+```
+
+Deletes the organization. Only administrators can delete an organization.
+
+Please note that deleting an organization will also delete all memberships and invitations. This is not reversible.
+
+### `setLogo()`
+
+```typescript
+function setLogo(params: SetOrganizationLogoParams): Promise<OrganizationResource>;
+```

@@ -34,7 +34,7 @@ Render the `OrganizationSwitcher` component to an HTML `<div>` element.
 
   const organizationSwitcherComponent = document.querySelector<HTMLDivElement>('#organization-switcher')!;
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
   await clerk.load();
 
   clerk.mountOrganizationSwitcher(organizationSwitcherComponent, {
@@ -112,7 +112,7 @@ Unmount and run cleanup on an existing OrganizationSwitcher component instance.
 
   const organizationSwitcherComponent = document.querySelector<HTMLDivElement>('#organization-switcher')!;
 
-  const clerk = new Clerk(import.meta.env.VITE_CLERK_PUBLISHABLE_KEY);
+  const clerk = new Clerk('pk_[publishable_key]');
 
   await clerk.load();
 
