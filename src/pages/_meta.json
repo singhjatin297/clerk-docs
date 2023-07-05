@@ -10,46 +10,94 @@
     "title": "# Learning",
     "type": "separator"
   },
-  "get-started": "Get Started",
+  "get-started": {
+    "title": "Get Started",
+    "section": "learning"
+  },
   "-- Sep 1": {
     "title": "----",
     "type": "separator"
   },
-  "quickstarts": "Quickstarts",
-  "integrations": "Integrations",
+  "quickstarts": {
+    "title": "Quickstarts",
+    "section": "learning"
+  },
+  "integrations": {
+    "title": "Integrations",
+    "section": "learning"
+  },
   "-- Sep 2": {
     "title": "----",
     "type": "separator"
   },
-  "users": "Users",
-  "organizations": "Organizations",
+  "users": {
+    "title": "Users",
+    "section": "learning"
+  },
+  "organizations": {
+    "title": "Organizations",
+    "section": "learning"
+  },
   "-- Sep 3": {
     "title": "----",
     "type": "separator"
   },
-  "testing": "Testing",
-  "advanced-usage": "Advanced Usage",
+  "testing": {
+    "title": "Testing",
+    "section": "learning"
+  },
+  "advanced-usage": {
+    "title": "Advanced Usage",
+    "section": "learning"
+  },
   "-- Sep 4": {
     "title": "----",
     "type": "separator"
   },
-  "migrations-deployments": "Migrations & Deployments",
-  "security": "Security",
-  "troubleshooting": "Troubleshooting",
+  "migrations-deployments": {
+    "title": "Migrations & Deployments",
+    "section": "learning"
+  },
+  "security": {
+    "title": "Security",
+    "section": "learning"
+  },
+  "troubleshooting": {
+    "title": "Troubleshooting",
+    "section": "learning"
+  },
   "# reference": {
     "title": "# Reference",
     "type": "separator"
   },
-  "reference-platform": "Platform",
+  "reference-platform": {
+    "title": "Platform",
+    "section": "reference"
+  },
   "-- Sep 5": {
     "title": "----",
     "type": "separator"
   },
-  "reference-react": "React",
-  "reference-next": "NextJS",
-  "reference-gatsby": "Gatsby",
-  "reference-remix": "Remix",
-  "reference-js": "JavaScript",
+  "reference-react": {
+    "title": "React",
+    "section": "reference"
+  },
+  "reference-next": {
+    "title": "NextJS",
+    "section": "reference"
+  },
+  "reference-gatsby": {
+    "title": "Gatsby",
+    "section": "reference"
+  },
+  "reference-remix": {
+    "title": "Remix",
+    "section": "reference"
+  },
+  "reference-js": {
+    "title": "JavaScript",
+    "section": "reference"
+  },
   "reference-node": {
     "title": "Node (coming Soon)"
   },

@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const withNextra = require("nextra")({
-  theme: "nextra-theme-docs",
+  theme: "/src/theme/theme.tsx",
   themeConfig: "./theme.config.tsx",
 });
 

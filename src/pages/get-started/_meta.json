@@ -2,5 +2,5 @@
   "why-clerk": {
     "title": "Why Clerk? (Coming Soon)"
   },
-  "setup-clerk": "Setup Clerk"
+  "setup-clerk": { "title": "Setup Clerk" }
 }
