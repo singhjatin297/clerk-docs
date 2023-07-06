@@ -1,8 +1,8 @@
 {
-  "general": "General",
-  "authentication": "Authentication",
-  "user-management": "User Management",
-  "organization-management": "Organization Management",
-  "customization": "Customization and Localization",
-  "internals": "Internals"
+  "general": { "title": "General" },
+  "authentication": { "title": "Authentication" },
+  "user-management": { "title": "User Management" },
+  "organization-management": { "title": "Organization Management" },
+  "customization": { "title": "Customization and Localization" },
+  "internals": { "title": "Internals" }
 }

@@ -1,5 +1,5 @@
 {
-  "phone-number": "Phone Number",
-  "verification": "Verification",
-  "second-factor": "Second Factor"
+  "phone-number": { "title": "Phone Number" },
+  "verification": { "title": "Verification" },
+  "second-factor": { "title": "Second Factor" }
 }

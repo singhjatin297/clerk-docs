@@ -1,4 +1,4 @@
 {
-  "email-address": "Email Address",
-  "verification": "Verification"
+  "email-address": { "title": "Email Address" },
+  "verification": { "title": "Verification" }
 }

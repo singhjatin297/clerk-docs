@@ -1,6 +1,6 @@
 {
-  "gatsby": "Gatsby",
-  "nextjs": "Next.js",
-  "remix": "Remix",
-  "redwood": "RedwoodJS"
+  "gatsby": { "title": "Gatsby" },
+  "nextjs": { "title": "Next.js" },
+  "remix": { "title": "Remix" },
+  "redwood": { "title": "RedwoodJS" }
 }

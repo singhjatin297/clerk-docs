@@ -1,5 +1,5 @@
 {
-  "create-organization": "<CreateOrganization/>",
-  "organization-profile": "<OrganizationProfile/>",
-  "organization-switcher": "<OrganizationSwitcher/>"
+  "create-organization": { "title": "<CreateOrganization/>" },
+  "organization-profile": { "title": "<OrganizationProfile/>" },
+  "organization-switcher": { "title": "<OrganizationSwitcher/>" }
 }

@@ -1,13 +1,15 @@
 {
-  "clerk-loaded": "<ClerkLoaded>",
-  "clerk-loading": "<ClerkLoading>",
-  "multi-session": "<MultisessionAppSupport>",
-  "authenticate-with-callback": "<AuthenticateWithRedirectCallback>",
-  "redirect-to-signin": "<RedirectToSignIn/>",
-  "redirect-to-signup": "<RedirectToSignUp/>",
-  "redirect-to-userprofile": "<RedirectToUserProfile/>",
-  "signed-in": "<SignedIn>",
-  "signed-out": "<SignedOut>",
-  "use-user": "useUser()",
-  "use-auth": "useAuth()"
+  "clerk-loaded": { "title": "<ClerkLoaded>" },
+  "clerk-loading": { "title": "<ClerkLoading>" },
+  "multi-session": { "title": "<MultisessionAppSupport>" },
+  "authenticate-with-callback": {
+    "title": "<AuthenticateWithRedirectCallback>"
+  },
+  "redirect-to-signin": { "title": "<RedirectToSignIn/>" },
+  "redirect-to-signup": { "title": "<RedirectToSignUp/>" },
+  "redirect-to-userprofile": { "title": "<RedirectToUserProfile/>" },
+  "signed-in": { "title": "<SignedIn>" },
+  "signed-out": { "title": "<SignedOut>" },
+  "use-user": { "title": "useUser()" },
+  "use-auth": { "title": "useAuth()" }
 }

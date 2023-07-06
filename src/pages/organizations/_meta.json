@@ -5,5 +5,5 @@
   "metadata": {
     "title": "Metadata (Coming Soon)"
   },
-  "guides": "Guides"
+  "guides": { "title": "Guides" }
 }

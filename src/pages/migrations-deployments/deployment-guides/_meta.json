@@ -1,3 +1,3 @@
 {
-    "vercel": "Deploy to Vercel"
+  "vercel": { "title": "Deploy to Vercel" }
 }

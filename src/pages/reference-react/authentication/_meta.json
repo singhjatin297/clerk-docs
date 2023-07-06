@@ -1,9 +1,9 @@
 {
-  "sign-in": "<SignIn />",
-  "sign-in-button": "<SignInButton />",
-  "sign-in-with-meta": "<SignInWithMetamaskButton/>",
-  "sign-up": "<SignUp />",
-  "sign-up-button": "<SignUpButton />",
-  "user-button": "<UserButton />",
-  "user-profile": "<UserProfile />"
+  "sign-in": { "title": "<SignIn />" },
+  "sign-in-button": { "title": "<SignInButton />" },
+  "sign-in-with-meta": { "title": "<SignInWithMetamaskButton/>" },
+  "sign-up": { "title": "<SignUp />" },
+  "sign-up-button": { "title": "<SignUpButton />" },
+  "user-button": { "title": "<UserButton />" },
+  "user-profile": { "title": "<UserProfile />" }
 }

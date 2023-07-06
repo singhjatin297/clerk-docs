@@ -1,4 +1,4 @@
 {
-  "session-token": "Customize your session token",
-  "manual-jwt": "Manual JWT Verification"
+  "session-token": { "title": "Customize your session token" },
+  "manual-jwt": { "title": "Manual JWT Verification" }
 }

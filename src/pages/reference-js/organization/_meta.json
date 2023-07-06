@@ -1,5 +1,5 @@
 {
-  "organization": "Organization",
-  "members": "Members",
-  "invitations": "Invitations"
+  "organization": { "title": "Organization" },
+  "members": { "title": "Members" },
+  "invitations": { "title": "Invitations" }
 }

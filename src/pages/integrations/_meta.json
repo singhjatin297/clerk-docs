@@ -5,6 +5,6 @@
   "webhooks": {
     "title": "Webhooks"
   },
-  "databases": "Databases",
-  "analytics": "Analytics"
+  "databases": { "title": "Databases" },
+  "analytics": { "title": "Analytics" }
 }

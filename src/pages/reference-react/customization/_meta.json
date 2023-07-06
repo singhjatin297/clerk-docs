@@ -1,4 +1,4 @@
 {
-  "appearance": "Appearance",
-  "localization": "Localization"
+  "appearance": { "title": "Appearance" },
+  "localization": { "title": "Localization" }
 }

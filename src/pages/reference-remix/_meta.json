@@ -1,4 +1,4 @@
 {
-  "clerk-app": "<ClerkApp/>",
-  "clerk-catch-boundary": "ClerkCatchBoundary()"
+  "clerk-app": { "title": "<ClerkApp/>" },
+  "clerk-catch-boundary": { "title": "ClerkCatchBoundary()" }
 }

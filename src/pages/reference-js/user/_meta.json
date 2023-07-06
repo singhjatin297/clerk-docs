@@ -1,6 +1,6 @@
 {
-  "user": "User",
-  "totp": "Time-based One-time Password",
-  "password-management": "Password Management",
-  "create-metadata": "Create Metadata"
+  "user": { "title": "User" },
+  "totp": { "title": "Time-based One-time Password" },
+  "password-management": { "title": "Password Management" },
+  "create-metadata": { "title": "Create Metadata" }
 }

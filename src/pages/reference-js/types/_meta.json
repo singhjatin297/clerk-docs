@@ -1,6 +1,6 @@
 {
-    "public-user-data": "Public User Data",
-    "redirect-options": "Redirect Options",
-    "magic-link-error": "Magic Link Error",
-    "deleted-object": "Deleted Object"
+  "public-user-data": { "title": "Public User Data" },
+  "redirect-options": { "title": "Redirect Options" },
+  "magic-link-error": { "title": "Magic Link Error" },
+  "deleted-object": { "title": "Deleted Object" }
 }

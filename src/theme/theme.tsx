@@ -1,12 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import type { NextraThemeLayoutProps } from "nextra";
+import { Sidebar } from "./components/sidebar";
 
 export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   const { title, frontMatter, headings, pageMap } = pageOpts;
   //   console.log("pageopts", pageOpts);
   //   console.log("headings", headings);
-  console.log("pagemap", pageMap);
+  // console.log("pagemap", pageMap);
 
   return (
     <div>
@@ -19,26 +20,7 @@ export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
           <li key={heading.value}>{heading.value}</li>
         ))}
       </ul>
-      <ul>
-        {pageMap.map((item) => {
-          console.log("item", item);
-          if (item.kind === "Folder") {
-            let pageName = pageMap[0].data[item.name].title;
-            return (
-              <li key={item.name}>
-                <Link href={item.route}>{pageName}</Link>
-                {item.children &&
-                  item.children.map((child) => {
-                    let childName = item;
-                    console.log("childname", childName);
-                    return <p key={child.name}>{child.name}</p>;
-                  })}
-              </li>
-            );
-          }
-          return null;
-        })}
-      </ul>
+      <Sidebar pages={pageMap} />
       {pageMap.map((item) => {
         if (item.kind === "MdxPage") {
           return (

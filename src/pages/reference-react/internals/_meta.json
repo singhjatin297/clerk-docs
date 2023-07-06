@@ -1,7 +1,7 @@
 {
-  "use-sign-in": "useSignIn()",
-  "use-sign-up": "useSignUp()",
-  "use-clerk": "useClerk()",
-  "use-session": "useSession()",
-  "use-session-list": "useSessionList()"
+  "use-sign-in": { "title": "useSignIn()" },
+  "use-sign-up": { "title": "useSignUp()" },
+  "use-clerk": { "title": "useClerk()" },
+  "use-session": { "title": "useSession()" },
+  "use-session-list": { "title": "useSessionList()" }
 }

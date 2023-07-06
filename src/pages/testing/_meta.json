@@ -5,6 +5,6 @@
   "otp-verification": {
     "title": "OTP Verification (Coming Soon)"
   },
-  "frontend": "Frontend",
-  "e2e": "End-To-End"
+  "frontend": { "title": "Frontend" },
+  "e2e": { "title": "End-To-End" }
 }

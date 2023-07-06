@@ -1,6 +1,6 @@
 {
-  "sign-in": "Sign In",
-  "first-factor": "First Factor",
-  "second-factor": "Second Factor",
-  "authenticate-with": "Authenticate With"
+  "sign-in": { "title": "Sign In" },
+  "first-factor": { "title": "First Factor" },
+  "second-factor": { "title": "Second Factor" },
+  "authenticate-with": { "title": "Authenticate With" }
 }

@@ -1,6 +1,6 @@
 {
-  "overview": "Overview (Coming Soon)",
-  "with-clerk-middleware": "withClerkMiddleware",
-  "get-auth": "getAuth()",
-  "build-clerk-props": "buildClerkProps"
+  "overview": { "title": "Overview (Coming Soon)" },
+  "with-clerk-middleware": { "title": "withClerkMiddleware" },
+  "get-auth": { "title": "getAuth()" },
+  "build-clerk-props": { "title": "buildClerkProps" }
 }
