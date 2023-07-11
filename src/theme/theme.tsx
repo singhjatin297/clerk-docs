@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Link from "next/link";
 import type { NextraThemeLayoutProps } from "nextra";
-import { Sidebar } from "./components/sidebar";
+import { Sidebar } from "./components/Sidebar";
 
 export default function Layout({ children, pageOpts }: NextraThemeLayoutProps) {
   const { title, frontMatter, headings, pageMap } = pageOpts;
   //   console.log("pageopts", pageOpts);
   //   console.log("headings", headings);
-  // console.log("pagemap", pageMap);
+  console.log("pagemap", pageMap);
 
   return (
     <div>
