@@ -26,6 +26,10 @@
     "title": "Integrations",
     "section": "learning"
   },
+  "customization": {
+    "title": "Customization",
+    "section": "learning"
+  },
   "-- Sep 2": {
     "title": "----",
     "type": "separator"
@@ -70,10 +74,15 @@
     "title": "# Reference",
     "type": "separator"
   },
+<<<<<<< HEAD
   "reference-platform": {
     "title": "Platform",
     "section": "reference"
   },
+=======
+  "reference-general": "General",
+  "reference-platform": "Platform",
+>>>>>>> DOCS-242
   "-- Sep 5": {
     "title": "----",
     "type": "separator"
