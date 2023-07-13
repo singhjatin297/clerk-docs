@@ -13,10 +13,13 @@ export type NavMenuGroupProps = HTMLAttributes<HTMLElement> & {
 export type NavMenuGroupHeadingProps = HTMLAttributes<HTMLElement> & {
   buttonProps?: HTMLAttributes<HTMLElement>;
 };
-export type NavMenuGroupContentProps = HTMLAttributes<HTMLElement>;
+export type NavMenuGroupContentProps = HTMLAttributes<HTMLElement> & {
+  active: boolean;
+};
 export type NavMenuDividerProps = Omit<HTMLAttributes<HTMLElement>, "children">;
 export type NavMenuHeadingProps = HTMLAttributes<HTMLElement>;
 
+// TODO: switch out divs for semantic HTML and style components to match designs (some styles were pulled from another component)
 const NavMenu = ({ children }: NavMenuProps) => {
   return (
     <div>
@@ -27,7 +30,7 @@ const NavMenu = ({ children }: NavMenuProps) => {
 
 const NavMenuItem = ({
   href,
-  active = false,
+  active,
   children,
   ...props
 }: NavMenuItemProps) => {
@@ -35,7 +38,6 @@ const NavMenuItem = ({
     <li {...props}>
       <a href={href} {...props}>
         {children}
-        {active ? <p>^</p> : null}
       </a>
     </li>
   );
@@ -48,11 +50,12 @@ const NavMenuGroup = ({
 }: NavMenuGroupProps) => {
   const [isOpen, setIsOpen] = useState(active);
   const [isActive, setIsActive] = useState(active);
+
   return (
     <NavMenuContext.Provider
       value={{ isOpen, isActive, setIsOpen, setIsActive }}
     >
-      <li {...props}>
+      <li>
         <div>{children}</div>
       </li>
     </NavMenuContext.Provider>
@@ -68,7 +71,6 @@ const NavMenuGroupHeading = ({ children }: NavMenuGroupHeadingProps) => {
         className="top-0 right-0 z-10 inline-flex w-32 p-2 px-2 py-1 bg-white border border-gray-300 rounded-md shadow-sm md:w-44 text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white dark:bg-[#1D2428] dark:border-gray-700"
         onClick={() => {
           context?.setIsOpen(!context.isOpen);
-          console.log("hey i clicked!");
         }}
       >
         {children}
@@ -77,11 +79,15 @@ const NavMenuGroupHeading = ({ children }: NavMenuGroupHeadingProps) => {
   );
 };
 
-const NavMenuGroupContent = ({ children }: NavMenuGroupContentProps) => {
+const NavMenuGroupContent = ({
+  active = false,
+  children,
+}: NavMenuGroupContentProps) => {
   const context = useContext(NavMenuContext);
-  console.log("context", context);
 
-  return <>{(context?.isActive || context?.isOpen) && <ul>{children}</ul>}</>;
+  // TODO: sub-menu sections open when active as they should, but i need to adjust this logic so they will then also be closeable onclick
+  const isVisible = context?.isActive || context?.isOpen || active;
+  return <>{isVisible && <ul>{children}</ul>}</>;
 };
 
 const NavMenuHeading = ({ children, ...props }: NavMenuHeadingProps) => {
@@ -90,7 +96,7 @@ const NavMenuHeading = ({ children, ...props }: NavMenuHeadingProps) => {
     <li {...props}>
       <button
         className="top-0 right-0 z-10 inline-flex w-32 p-2 px-2 py-1 bg-white border border-gray-300 rounded-md shadow-sm md:w-44 text-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-white dark:bg-[#1D2428] dark:border-gray-700"
-        onClick={() => console.log("ok i clicked now what")}
+        onClick={() => console.log("click")}
       >
         {children}
       </button>

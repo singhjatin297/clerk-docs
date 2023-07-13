@@ -1,7 +1,5 @@
-import { Fragment } from "react";
-import Head from "next/head";
-import Link from "next/link";
 import type { PageMapItem } from "nextra";
+import { useRouter } from "next/router";
 
 import { NavMenu } from "./NavMenu";
 
@@ -10,19 +8,26 @@ interface SidebarProps {
 }
 
 export const Sidebar = ({ pages }: SidebarProps) => {
-  // console.log("pages", pages);
+  const { pathname } = useRouter();
 
-  // to find page item active i need to grab it from the url -- i can do that tomorrow
   return (
     <menu>
+      {/*TODO: adjust the order of the pages being mapped (perhaps switch to a .reduce()) to match the design & separate into sections, using the .meta files*/}
       {pages.map((pageItem) =>
         (function renderSidebar(pageItem) {
+          console.log("pageitem", pageItem);
           if ("children" in pageItem && pageItem.children) {
-            console.log("pageitem", pageItem);
+            let containsCurrentPage = false;
+            pageItem.children.forEach((child) => {
+              if (child.kind === "MdxPage" && child.route === pathname) {
+                containsCurrentPage = true;
+              }
+            });
             return (
+              // TODO: pull folder names from .meta instead of pagemap so they are not kebab-cased
               <NavMenu.Group key={pageItem.name}>
                 <NavMenu.Group.Heading>{pageItem.name}</NavMenu.Group.Heading>
-                <NavMenu.Group.Content>
+                <NavMenu.Group.Content active={containsCurrentPage}>
                   {pageItem.children.map(renderSidebar)}
                 </NavMenu.Group.Content>
               </NavMenu.Group>
@@ -33,7 +38,7 @@ export const Sidebar = ({ pages }: SidebarProps) => {
               <NavMenu.Item
                 key={pageItem.name}
                 href={pageItem.route}
-                active={false}
+                active={pageItem.route.includes(pathname)}
               >
                 {pageItem.frontMatter?.title}
               </NavMenu.Item>
