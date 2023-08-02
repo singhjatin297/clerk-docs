@@ -15,15 +15,77 @@
       ["Gatsby", "/quickstarts/gatsby"],
       ["RedwoodJS", "/quickstarts/redwood"],
       "# Frontend",
-      ["JavaScript", "/quickstarts/frontend/javascript"],
+      ["JavaScript", "/quickstarts/javascript"],
       ["React", "/quickstarts/react"],
       "# Backend",
       ["Express", "/quickstarts/express"],
       ["Fastify", "/quickstarts/fastify"],
-      ["Ruby / Rails", "/quickstarts/ruby-rails"],
       "# Example Apps",
-      ["Next.js starter repo", "/quickstarts/ruby-rails"],
-      ["Remix starter repo", "/quickstarts/ruby-rails"]
+      ["Next.js starter repo", "/quickstarts/external-link"],
+      ["Remix starter repo", "/quickstarts/external-link"]
+    ]
+  ],
+  "---",
+  [
+    {
+      "title": "Authentication",
+      "icon": "user",
+      "root": "authentication"
+    },
+    [
+      [
+        { "title": "Social Connections" },
+        [
+          ["Overview", "/authentication/social-connections/overview"],
+          ["Google", "/authentication/social-connections/google"],
+          ["Facebook", "/authentication/social-connections/facebook"],
+          ["Apple", "/authentication/social-connections/apple"],
+          ["Github", "/authentication/social-connections/github"],
+          ["Twitter", "/authentication/social-connections/twitter"],
+          ["Microsoft", "/authentication/social-connections/microsoft"],
+          ["LinkedIn", "/authentication/social-connections/linkedIn"],
+          ["Dropbox", "/authentication/social-connections/dropbox"],
+          ["Discord", "/authentication/social-connections/discord"],
+          ["TikTok", "/authentication/social-connections/tiktok"],
+          ["GitLab", "/authentication/social-connections/gitlab"],
+          ["Slack", "/authentication/social-connections/slack"],
+          ["Linear", "/authentication/social-connections/linear"],
+          ["Atlassian", "/authentication/social-connections/atlassian"],
+          ["Bitbucket", "/authentication/social-connections/bitbucket"],
+          ["HubSpot", "/authentication/social-connections/hubspot"],
+          ["Coinbase", "/authentication/social-connections/coinbase"],
+          ["Spotify", "/authentication/social-connections/spotify"],
+          ["Notion", "/authentication/social-connections/notion"],
+          ["Line", "/authentication/social-connections/line"],
+          ["Box", "/authentication/social-connections/box"],
+          ["Xero", "/authentication/social-connections/xero/"]
+        ]
+      ]
+    ]
+  ],
+  [
+    {
+      "title": "Users",
+      "icon": "user",
+      "root": "users-and-auth"
+    },
+    []
+  ],
+  [
+    { "title": "Organizations", "icon": "user-group", "root": "organizations" },
+    [
+      ["Overview", "/organizations/overview"],
+      "# Components",
+      ["<CreateOrganization/>", "/organizations/create-component"],
+      ["<OrganizationProfile/>", "/organizations/profile-component"],
+      ["<OrganizationSwitcher/>", "/organizations/switcher-component"],
+
+      "# Building custom flows",
+      ["Using metadata", "/organizations/metadata"],
+      ["Creating orgs", "/organizations/creating-organizations"],
+      ["Inviting users", "/organizations/inviting-users"],
+      ["Managing roles", "/organizations/managing-roles"],
+      ["Managing multiple orgs", "/organizations/multiple-orgs"]
     ]
   ],
   "---",
@@ -77,25 +139,27 @@
     {
       "title": "Migrations & Deployments",
       "icon": "rocket",
-      "root": "organizations"
+      "root": "deployments"
     },
-    []
+    [
+      "# Deployment",
+      ["Deploy to production", "/deployments/overview"],
+      ["Deploy to Vercel", "/deployments/deploy-to-vercel"],
+      ["Changing domains", "/deployments/changing-domains"],
+      "# Migrations",
+      ["Overview", "/deployments/migrate-overview"],
+      ["Import users", "/deployments/import-users"],
+      ["Export users", "/deployments/export-users"],
+      ["Migrate from Firbase", "/deployments/migrate-from-firebase"]
+    ]
   ],
   [
     { "title": "Testing", "icon": "beaker", "root": "testing" },
     [
-      ["Overview", "/organizations/overview"],
-      "# Components",
-      ["<CreateOrganization/>", "/organizations/create-component"],
-      ["<OrganizationProfile/>", "/organizations/profile-component"],
-      ["<OrganizationSwitcher/>", "/organizations/switcher-component"],
-
-      "# Building custom flows",
-      ["Using metadata", "/organizations/metadata"],
-      ["Creating orgs", "/organizations/creating-organizations"],
-      ["Inviting users", "/organizations/inviting-users"],
-      ["Managing roles", "/organizations/managing-roles"],
-      ["Managing multiple orgs", "/organizations/multiple-orgs"]
+      ["Overview", "/testing/overview"],
+      ["Test Emails and Phones", "/testing/test-emails-and-phones"],
+      "# Testing Frameworks",
+      ["Cypress", "/testing/cypress"]
     ]
   ],
   [
@@ -120,23 +184,19 @@
     ]
   ],
   [
-    { "title": "Troubleshooting", "icon": "support", "root": "testing" },
+    {
+      "title": "Troubleshooting",
+      "icon": "support",
+      "root": "troubleshooting"
+    },
     [
-      ["Overview", "/organizations/overview"],
-      "# Components",
-      ["<CreateOrganization/>", "/organizations/create-component"],
-      ["<OrganizationProfile/>", "/organizations/profile-component"],
-      ["<OrganizationSwitcher/>", "/organizations/switcher-component"],
-
-      "# Building custom flows",
-      ["Using metadata", "/organizations/metadata"],
-      ["Creating orgs", "/organizations/creating-organizations"],
-      ["Inviting users", "/organizations/inviting-users"],
-      ["Managing roles", "/organizations/managing-roles"],
-      ["Managing multiple orgs", "/organizations/multiple-orgs"]
+      ["Overview", "/troubleshooting/overview"],
+      ["Email Deliverability", "/troubleshooting/email-deliverability"],
+      "# Help & Support",
+      ["Community Discord", "https://discord.com/invite/b5rXHjAg7A"],
+      ["Contact Support", "https://clerk.com/support"]
     ]
   ],
-  [{ "title": "Security", "icon": "lock-closed", "root": "components" }, []],
   [
     {
       "title": "Upgrade Guides",
@@ -144,187 +204,337 @@
       "root": "upgrade-guides"
     },
     [
-      ["Overview", "/organizations/overview"],
-      "# Components",
-      ["<CreateOrganization/>", "/organizations/create-component"],
-      ["<OrganizationProfile/>", "/organizations/profile-component"],
-      ["<OrganizationSwitcher/>", "/organizations/switcher-component"],
-
-      "# Building custom flows",
-      ["Using metadata", "/organizations/metadata"],
-      ["Creating orgs", "/organizations/creating-organizations"],
-      ["Inviting users", "/organizations/inviting-users"],
-      ["Managing roles", "/organizations/managing-roles"],
-      ["Managing multiple orgs", "/organizations/multiple-orgs"]
+      "# API Key Changes",
+      ["Overview", "/upgrade-guides/api-keys"],
+      "# URL-based session syncing",
+      ["Overview", "/upgrade-guides/url-based-session-syncing"],
+      "# Progressive Sign up",
+      ["Overview", "/upgrade-guides/progressive-sign-up"],
+      "# Upgrade to V3",
+      ["Introduction", "/upgrade-guides/v3-introduction"],
+      ["Client-side changes", "/upgrade-guides/v3-client-side-changes"],
+      [
+        "Next.js server-side changes",
+        "/upgrade-guides/v3-nextjs-server-side-changes"
+      ],
+      [
+        "Express server-side changes",
+        "/upgrade-guides/v3-express-server-side-changes"
+      ]
     ]
   ],
   "# SDK References",
   [
-    { "title": "Javascript SDK", "root": "references/javascript" },
+    { "title": "Next.js", "root": "references/nextjs" },
     [
-      ["Overview", "/references/javascript/overview"],
-      [
-        { "title": "Clerk" },
-        [
-          ["Clerk", "/organizations/create-component"],
-          ["SignIn", "/organizations/create-component"],
-          ["SignUp", "/organizations/create-component"],
-          ["UserProfile", "/organizations/create-component"],
-          ["UserButton", "/organizations/create-component"],
-          ["OrganizationProfile", "/organizations/create-component"],
-          ["CreateOrganization", "/organizations/create-component"],
-          ["OrganizationMethods", "/organizations/create-component"],
-          ["RedirectMethods", "/organizations/create-component"],
-          ["BuildURLs", "/organizations/create-component"],
-          ["Handle Navigation", "/organizations/create-component"],
-          ["Session Methods", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "User" },
-        [
-          ["User", "/organizations/create-component"],
-          ["Time-based OTP", "/organizations/create-component"],
-          ["Password Management", "/organizations/create-component"],
-          ["Create Metadata", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "Organization" },
-        [
-          ["Organization", "/organizations/create-component"],
-          ["Members", "/organizations/create-component"],
-          ["Invitations", "/organizations/create-component"]
-        ]
-      ],
-      ["Organization Invitation", "/references/javascript/overview"],
-      ["Organization Membership", "/references/javascript/overview"],
-      ["Session", "/references/javascript/overview"],
-      ["SessionWithActivities", "/references/javascript/overview"],
-      ["Client", "/references/javascript/overview"],
-      ["ExternalAccount", "/references/javascript/overview"],
-      [
-        { "title": "Sign In" },
-        [
-          ["Sign In", "/organizations/create-component"],
-          ["First Factor", "/organizations/create-component"],
-          ["Second Factor", "/organizations/create-component"],
-          ["AuthenticateWith", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "Sign Up" },
-        [
-          ["Sign Up", "/organizations/create-component"],
-          ["AuthenticateWith", "/organizations/create-component"],
-          ["Verification", "/organizations/create-component"],
-          ["Email Verification", "/organizations/create-component"],
-          ["Phone Verification", "/organizations/create-component"],
-          ["Web3 Verification", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "Email Address" },
-        [
-          ["Email Address", "/organizations/create-component"],
-          ["Verification", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "Phone Number" },
-        [
-          ["Phone Number", "/organizations/create-component"],
-          ["Verification", "/organizations/create-component"],
-          ["SecondFactor", "/organizations/create-component"]
-        ]
-      ],
-      [
-        { "title": "Web3 Wallet" },
-        [
-          ["Web3 Wallet", "/organizations/create-component"],
-          ["Verification", "/organizations/create-component"]
-        ]
-      ],
-      ["Verification", "/references/javascript/overview"],
-      [
-        { "title": "Types" },
-        [
-          ["Public User Data", "/organizations/create-component"],
-          ["Redirect Options", "/organizations/create-component"],
-          ["Magic Link Error", "/organizations/create-component"],
-          ["Deleted Object", "/organizations/create-component"]
-        ]
-      ]
+      ["Overview", "/references/nextjs/overview"],
+      ["withClerkMiddleware", "/references/nextjs/with-clerk-middleware"],
+      ["getAuth()", "/references/nextjs/get-auth"],
+      ["buildClerkProps", "/references/nextjs/build-clerk-props"]
     ]
   ],
   [
     { "title": "React Components", "root": "references/react" },
     [
+      ["Overview", "/references/react/components/overview"],
+      ["<ClerkProvider/>", "/references/react/components/clerk-provider"],
       "# Authentication Components",
-      ["<SignIn/>", "/references/react/clerk-provider"],
-      ["<SignUp/>", "/references/react/clerk-provider"],
-      ["<SignUpButton/>", "/references/react/clerk-provider"],
+      ["<SignIn/>", "/references/react/components/authentication/sign-in"],
+      ["<SignUp/>", "/references/react/components/authentication/sign-up"],
 
       "# User Components",
-      ["<UserButton/>", "/references/react/clerk-provider"],
-      ["<UserProfile/>", "/references/react/clerk-provider"],
+      ["<UserButton/>", "/references/react/components/user/user-button"],
+      ["<UserProfile/>", "/references/react/components/user/user-profile"],
 
       "# Organization Components",
-      ["<CreateOrganization/>", "/organizations/create-component"],
-      ["<OrganizationProfile/>", "/organizations/profile-component"],
-      ["<OrganizationSwitcher/>", "/organizations/switcher-component"],
+      [
+        "<CreateOrganization/>",
+        "/references/react/components/organization/create-organization"
+      ],
+      [
+        "<OrganizationProfile/>",
+        "/references/react/components/organization/organization-profile"
+      ],
+      [
+        "<OrganizationSwitcher/>",
+        "/references/react/components/organization/organization-switcher"
+      ],
+
       "# Customization",
       [
         { "title": "Appearance prop" },
         [
-          ["Elements", "/organizations/create-component"],
-          ["Layout", "/organizations/create-component"],
-          ["Themes", "/organizations/create-component"],
-          ["Variables", "/organizations/create-component"]
+          ["Overview", "/references/react/components/customization/overview"],
+          ["Layout", "/references/react/components/customization/layout"],
+          ["Themes", "/references/react/components/customization/themes"],
+          ["Variables", "/references/react/components/customization/variables"]
         ]
       ],
-      ["Localization prop (i18n)", "/organizations/create-component"],
-
+      [
+        "Localization prop (i18n)",
+        "/references/react/components/customization/localization"
+      ],
       "# Control Components",
       [
         "<AuthenticateWithRedirectCallback/>",
-        "/references/react/clerk-provider"
+        "/references/react/components/control/authenticate-with-callback"
       ],
-      ["<ClerkLoaded/>", "/references/react/clerk-provider"],
-      ["<ClerkLoading/>", "/references/react/clerk-provider"],
-      ["<ClerkProvider/>", "/references/react/clerk-provider"],
-      ["<MultisessionAppSupport/>", "/references/react/clerk-provider"],
-      ["<RedirectToSignIn/>", "/references/react/clerk-provider"],
-      ["<RedirectToSignUp/>", "/references/react/clerk-provider"],
-      ["<RedirectToUserProfile/>", "/references/react/clerk-provider"],
-      ["<SignedIn/>", "/references/react/clerk-provider"],
-      ["<SignedOut/>", "/references/react/clerk-provider"]
+      ["<ClerkLoaded/>", "/references/react/components/control/clerk-loaded"],
+      ["<ClerkLoading/>", "/references/react/components/control/clerk-loading"],
+      [
+        "<MultisessionAppSupport/>",
+        "/references/react/components/control/multi-session"
+      ],
+      [
+        "<RedirectToSignIn/>",
+        "/references/react/components/control/redirect-to-signin"
+      ],
+      [
+        "<RedirectToSignUp/>",
+        "/references/react/components/control/redirect-to-signup"
+      ],
+      [
+        "<RedirectToUserProfile/>",
+        "/references/react/components/control/redirect-to-userprofile"
+      ],
+      ["<SignedIn/>", "/references/react/components/control/signed-in"],
+      ["<SignedOut/>", "/references/react/components/control/signed-out"],
+      "# Unstyled Components",
+      [
+        "<SignInButton/>",
+        "/references/react/components/unstyled/sign-in-button"
+      ],
+      [
+        "<SignInWithMetamaskButton/>",
+        "/references/react/components/unstyled/sign-in-with-metamask"
+      ],
+      [
+        "<SignUpButton/>",
+        "/references/react/components/unstyled/sign-up-button"
+      ]
     ]
   ],
-  ["React Hooks", "refrences/nextjs"],
-  ["Next.js SDK", "refrences/nextjs"],
-  ["Remix", "refrences/remix"],
-  ["Gatsby", "refrences/gatsby"],
-  ["Node", "refrences/node"],
-  ["Go", "refrences/go"],
-  ["Community SDKs", "refrences/community"],
   [
-    { "title": "React SDK" },
+    { "title": "React" },
     [
-      ["React Components", "refrences/nextjs"],
-      ["React Hooks", "refrences/nextjs"],
+      ["React Components", "refrences/react/tbd"],
+      ["React Hooks", "refrences/react/tbd"]
+    ]
+  ],
+  [
+    { "title": "Javascript", "root": "references/javascript" },
+    [
+      ["Overview", "/references/javascript/overview"],
       [
-        { "title": "Appearance prop" },
+        { "title": "Clerk" },
         [
-          ["Elements", "/organizations/create-component"],
-          ["Layout", "/organizations/create-component"],
-          ["Themes", "/organizations/create-component"],
-          ["Variables", "/organizations/create-component"]
+          ["Clerk", "/references/javascript/clerk/clerk"],
+          ["SignIn", "/references/javascript/clerk/sign-in"],
+          ["SignUp", "/references/javascript/clerk/sign-up"],
+          ["UserProfile", "/references/javascript/clerk/user-profile"],
+          ["UserButton", "/references/javascript/clerk/user-button"],
+          [
+            "OrganizationProfile",
+            "/references/javascript/clerk/organization-profile"
+          ],
+          [
+            "OrganizationSwitcher",
+            "/references/javascript/clerk/organization-switcher"
+          ],
+          [
+            "CreateOrganization",
+            "/references/javascript/clerk/create-organization"
+          ],
+          [
+            "OrganizationMethods",
+            "/references/javascript/clerk/organization-methods"
+          ],
+          ["RedirectMethods", "/references/javascript/clerk/redirect-methods"],
+          ["BuildURLs", "/references/javascript/clerk/build-urls"],
+          [
+            "Handle Navigation",
+            "/references/javascript/clerk/handle-navigation"
+          ],
+          ["Session Methods", "/references/javascript/clerk/session-methods"]
+        ]
+      ],
+      [
+        { "title": "User" },
+        [
+          ["User", "/references/javascript/user/user"],
+          ["Time-based OTP", "/references/javascript/user/totp"],
+          [
+            "Password Management",
+            "/references/javascript/user/password-management"
+          ],
+          ["Create Metadata", "/references/javascript/user/create-metadata"]
+        ]
+      ],
+      [
+        { "title": "Organization" },
+        [
+          ["Organization", "/references/javascript/organization/organization"],
+          ["Members", "/references/javascript/organization/members"],
+          ["Invitations", "/references/javascript/organization/invitations"]
+        ]
+      ],
+      [
+        "Organization Invitation",
+        "/references/javascript/organization-invitation"
+      ],
+      [
+        "Organization Membership",
+        "/references/javascript/organization-membership"
+      ],
+      ["Session", "/references/javascript/session"],
+      [
+        "SessionWithActivities",
+        "/references/javascript/session-waith-activities"
+      ],
+      ["Client", "/references/javascript/client"],
+      ["ExternalAccount", "/references/javascript/external-account"],
+      [
+        { "title": "Sign In" },
+        [
+          ["Sign In", "/references/javascript/sign-in/sign-in"],
+          ["First Factor", "/references/javascript/sign-in/first-factor"],
+          ["Second Factor", "/references/javascript/sign-in/second-factor"],
+          [
+            "AuthenticateWith",
+            "/references/javascript/sign-in/authenticate-with"
+          ]
+        ]
+      ],
+      [
+        { "title": "Sign Up" },
+        [
+          ["Sign Up", "/references/javascript/sign-up/sign-up"],
+          [
+            "AuthenticateWith",
+            "/references/javascript/sign-up/authenticate-with"
+          ],
+          ["Verification", "/references/javascript/sign-up/verification"],
+          [
+            "Email Verification",
+            "/references/javascript/sign-up/email-verification"
+          ],
+          [
+            "Phone Verification",
+            "/references/javascript/sign-up/phone-verification"
+          ],
+          [
+            "Web3 Verification",
+            "/references/javascript/sign-up/web3-verification"
+          ]
+        ]
+      ],
+      [
+        { "title": "Email Address" },
+        [
+          [
+            "Email Address",
+            "/references/javascript/email-address/email-address"
+          ],
+          ["Verification", "/references/javascript/email-address/verification"]
+        ]
+      ],
+      [
+        { "title": "Phone Number" },
+        [
+          ["Phone Number", "/references/javascript/phone-number/phone-number"],
+          ["Verification", "/references/javascript/phone-number/verification"],
+          ["SecondFactor", "/references/javascript/phone-number/second-factor"]
+        ]
+      ],
+      [
+        { "title": "Web3 Wallet" },
+        [
+          ["Web3 Wallet", "/references/javascript/web3-wallet/web3-wallet"],
+          ["Verification", "/references/javascript/web3-wallet/verification"]
+        ]
+      ],
+      ["Verification", "/references/javascript/verification"],
+      [
+        { "title": "Types" },
+        [
+          ["Public User Data", "/references/javascript/types/public-user-data"],
+          ["Redirect Options", "/references/javascript/types/redirect-options"],
+          ["Magic Link Error", "/references/javascript/types/magic-link-error"],
+          ["Deleted Object", "/references/javascript/types/deleted-object"]
         ]
       ]
     ]
   ],
+  [
+    {
+      "title": "Node.js",
+      "root": "references/nodejs"
+    },
+    [
+      ["Overview", "references/nodejs/overview"],
+      ["Availabe Methods", "references/nodejs/methods"],
+      ["Connect/Express Middleware", "references/nodejs/express-middleware"],
+      [
+        "Networkless Token Verification",
+        "references/nodejs/token-verification"
+      ],
+      ["Troubleshooting", "references/nodejs/troubleshooting"]
+    ]
+  ],
+  [
+    {
+      "title": "React Native / Expo",
+      "root": "references/react-native"
+    },
+    [["Overview", "references/react-native/overview"]]
+  ],
+  [
+    {
+      "title": "Remix",
+      "root": "references/remix"
+    },
+    [
+      ["Overview", "references/remix/overview"],
+      ["<ClerkApp/>", "references/remix/clerk-app"],
+      ["ClerkCatchBoundary()", "references/remix/clerk-catch-boundary"]
+    ]
+  ],
+  [
+    {
+      "title": "Go",
+      "root": "references/go"
+    },
+    [
+      ["Overview", "references/go/overview"],
+      ["Verifying sessions", "references/go/verifying-sessions"],
+      ["Other examples", "references/go/other-examples"]
+    ]
+  ],
+  [
+    {
+      "title": "Gatsby",
+      "root": "references/gatsby"
+    },
+    [
+      ["Overview", "references/gatsby/overview"],
+      ["withServerAuth()", "references/gatsby/with-server-auth"]
+    ]
+  ],
+  [
+    {
+      "title": "Ruby / Rails",
+      "root": "references/ruby"
+    },
+    [
+      ["Overview", "references/ruby/overview"],
+      ["Available Methods", "references/ruby/available-methods"],
+      ["Rack/Rails integration", "references/ruby/rack-rails"]
+    ]
+  ],
   "# API References",
-  ["Frontend API", "https://reference.clerk.dev/reference/frontend-api-reference"],
+  [
+    "Frontend API",
+    "https://reference.clerk.dev/reference/frontend-api-reference"
+  ],
   ["Backend API", "https://clerk.com/docs/reference/backend-api"]
 ]
